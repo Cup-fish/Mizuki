@@ -5,12 +5,12 @@
   <link href="https://mizuki.mysqil.com/" rel="alternate" type="text/html"/>
   <link href="https://mizuki.mysqil.com/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://mizuki.mysqil.com/</id>
-  <updated>2026-06-28T11:01:46.541Z</updated>
+  <updated>2026-06-28T11:15:48.766Z</updated>
   <language>zh_CN</language>
   <entry>
     <title>Markdown 扩展语法示例</title>
-    <link href="https://mizuki.mysqil.com/posts/markdown-extended/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/markdown-extended/</id>
+    <link href="https://mizuki.mysqil.com/Mizuki/posts/markdown-extended/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/Mizuki/posts/markdown-extended/</id>
     <published>2026-01-01T00:00:00.000Z</published>
     <updated>2026-01-01T00:00:00.000Z</updated>
     <summary>演示博客支持的各种扩展 Markdown 语法</summary>
@@ -54,8 +54,8 @@ $$</p>
   </entry>
   <entry>
     <title>Mermaid 流程图示例</title>
-    <link href="https://mizuki.mysqil.com/posts/markdown-mermaid/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/markdown-mermaid/</id>
+    <link href="https://mizuki.mysqil.com/Mizuki/posts/markdown-mermaid/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/Mizuki/posts/markdown-mermaid/</id>
     <published>2026-01-01T00:00:00.000Z</published>
     <updated>2026-01-01T00:00:00.000Z</updated>
     <summary>演示如何在文章中使用 Mermaid 绘制各种图表</summary>
@@ -92,8 +92,8 @@ $$</p>
   </entry>
   <entry>
     <title>写文章的一些小技巧</title>
-    <link href="https://mizuki.mysqil.com/posts/markdown-tutorial/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/markdown-tutorial/</id>
+    <link href="https://mizuki.mysqil.com/Mizuki/posts/markdown-tutorial/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/Mizuki/posts/markdown-tutorial/</id>
     <published>2026-01-01T00:00:00.000Z</published>
     <updated>2026-01-01T00:00:00.000Z</updated>
     <summary>记录一下博客写作常用的 Markdown 语法</summary>
@@ -159,8 +159,8 @@ pinned: false  # true 表示置顶
   </entry>
   <entry>
     <title>在文章中嵌入视频</title>
-    <link href="https://mizuki.mysqil.com/posts/video/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/video/</id>
+    <link href="https://mizuki.mysqil.com/Mizuki/posts/video/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/Mizuki/posts/video/</id>
     <published>2026-01-01T00:00:00.000Z</published>
     <updated>2026-01-01T00:00:00.000Z</updated>
     <summary>这篇文章演示如何在博客里嵌入 B 站或 YouTube 视频</summary>
@@ -186,8 +186,8 @@ pinned: false  # true 表示置顶
   </entry>
   <entry>
     <title>Simple Guides for Mizuki</title>
-    <link href="https://mizuki.mysqil.com/posts/guide/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/guide/</id>
+    <link href="https://mizuki.mysqil.com/Mizuki/posts/guide/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/Mizuki/posts/guide/</id>
     <published>2024-04-01T00:00:00.000Z</published>
     <updated>2024-04-01T00:00:00.000Z</updated>
     <summary>How to use this blog template.</summary>

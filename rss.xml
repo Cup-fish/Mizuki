@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cup-fish</title><description>One demo website</description><link>https://mizuki.mysqil.com/</link><language>zh_CN</language><item><title>Markdown 扩展语法示例</title><link>https://mizuki.mysqil.com/posts/markdown-extended/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-extended/</guid><description>演示博客支持的各种扩展 Markdown 语法</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub 仓库卡片&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cup-fish</title><description>One demo website</description><link>https://mizuki.mysqil.com/</link><language>zh_CN</language><item><title>Markdown 扩展语法示例</title><link>https://mizuki.mysqil.com/Mizuki/posts/markdown-extended/</link><guid isPermaLink="true">https://mizuki.mysqil.com/Mizuki/posts/markdown-extended/</guid><description>演示博客支持的各种扩展 Markdown 语法</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub 仓库卡片&lt;/h2&gt;
 &lt;p&gt;可以用这个语法嵌入 GitHub 仓库卡片：&lt;/p&gt;
 &lt;p&gt;::github{repo=&quot;Cup-fish/witherwithwinter.github.io&quot;}&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;::github{repo=&quot;用户名/仓库名&quot;}
@@ -30,7 +30,7 @@
 &lt;p&gt;$$
 \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
 $$&lt;/p&gt;
-</content:encoded></item><item><title>Mermaid 流程图示例</title><link>https://mizuki.mysqil.com/posts/markdown-mermaid/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-mermaid/</guid><description>演示如何在文章中使用 Mermaid 绘制各种图表</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Mermaid 是一个很方便的工具，可以直接用文字来画图表，不需要手动画图～&lt;/p&gt;
+</content:encoded></item><item><title>Mermaid 流程图示例</title><link>https://mizuki.mysqil.com/Mizuki/posts/markdown-mermaid/</link><guid isPermaLink="true">https://mizuki.mysqil.com/Mizuki/posts/markdown-mermaid/</guid><description>演示如何在文章中使用 Mermaid 绘制各种图表</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Mermaid 是一个很方便的工具，可以直接用文字来画图表，不需要手动画图～&lt;/p&gt;
 &lt;h2&gt;流程图&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;graph TD
     A[开始] --&amp;gt; B{条件判断}
@@ -55,7 +55,7 @@ $$&lt;/p&gt;
     &quot;其他&quot; : 5
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Mermaid 支持很多种图表类型，具体可以参考&lt;a href=&quot;https://mermaid.js.org/&quot;&gt;官方文档&lt;/a&gt;。&lt;/p&gt;
-</content:encoded></item><item><title>写文章的一些小技巧</title><link>https://mizuki.mysqil.com/posts/markdown-tutorial/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-tutorial/</guid><description>记录一下博客写作常用的 Markdown 语法</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;基础语法&lt;/h2&gt;
+</content:encoded></item><item><title>写文章的一些小技巧</title><link>https://mizuki.mysqil.com/Mizuki/posts/markdown-tutorial/</link><guid isPermaLink="true">https://mizuki.mysqil.com/Mizuki/posts/markdown-tutorial/</guid><description>记录一下博客写作常用的 Markdown 语法</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;基础语法&lt;/h2&gt;
 &lt;h3&gt;标题&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# 一级标题
 ## 二级标题
@@ -109,7 +109,7 @@ pinned: false  # true 表示置顶
 ---
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;就这些啦，其实写多了就熟了呢～&lt;/p&gt;
-</content:encoded></item><item><title>在文章中嵌入视频</title><link>https://mizuki.mysqil.com/posts/video/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/video/</guid><description>这篇文章演示如何在博客里嵌入 B 站或 YouTube 视频</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;直接把视频的嵌入代码复制到 Markdown 文件里就好啦～&lt;/p&gt;
+</content:encoded></item><item><title>在文章中嵌入视频</title><link>https://mizuki.mysqil.com/Mizuki/posts/video/</link><guid isPermaLink="true">https://mizuki.mysqil.com/Mizuki/posts/video/</guid><description>这篇文章演示如何在博客里嵌入 B 站或 YouTube 视频</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;直接把视频的嵌入代码复制到 Markdown 文件里就好啦～&lt;/p&gt;
 &lt;h2&gt;B 站视频&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; 
   src=&quot;//player.bilibili.com/player.html?bvid=你的BV号&amp;amp;p=1&amp;amp;autoplay=0&quot; 
@@ -123,7 +123,7 @@ pinned: false  # true 表示置顶
   frameborder=&quot;0&quot; allowfullscreen&amp;gt;
 &amp;lt;/iframe&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Simple Guides for Mizuki</title><link>https://mizuki.mysqil.com/posts/guide/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/guide/</guid><description>How to use this blog template.</description><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog template is built with &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;. For the things that are not mentioned in this guide, you may find the answers in the &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
+</content:encoded></item><item><title>Simple Guides for Mizuki</title><link>https://mizuki.mysqil.com/Mizuki/posts/guide/</link><guid isPermaLink="true">https://mizuki.mysqil.com/Mizuki/posts/guide/</guid><description>How to use this blog template.</description><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog template is built with &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;. For the things that are not mentioned in this guide, you may find the answers in the &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Front-matter of Posts&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;---
 title: My First Blog Post
