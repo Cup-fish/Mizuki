@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cup-fish</title><description>One demo website</description><link>https://mizuki.mysqil.com/</link><language>zh_CN</language><item><title>Markdown 扩展语法示例</title><link>https://mizuki.mysqil.com/posts/markdown-extended/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-extended/</guid><description>演示博客支持的各种扩展 Markdown 语法</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub 仓库卡片&lt;/h2&gt;
+&lt;p&gt;可以用这个语法嵌入 GitHub 仓库卡片：&lt;/p&gt;
+&lt;p&gt;::github{repo=&quot;Cup-fish/witherwithwinter.github.io&quot;}&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;::github{repo=&quot;用户名/仓库名&quot;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;提示框&lt;/h2&gt;
+&lt;p&gt;支持以下几种提示框类型：&lt;/p&gt;
+&lt;p&gt;:::note
+这是一条普通提示，用来补充说明一些信息。
+:::&lt;/p&gt;
+&lt;p&gt;:::tip
+这是一条小技巧，帮助你更顺利地完成操作。
+:::&lt;/p&gt;
+&lt;p&gt;:::warning
+这是一条警告，请注意这里可能有风险。
+:::&lt;/p&gt;
+&lt;p&gt;:::important
+这是重要信息，不要错过哦。
+:::&lt;/p&gt;
+&lt;p&gt;:::caution
+这是一条危险提示，操作前请三思。
+:::&lt;/p&gt;
+&lt;h2&gt;折叠剧透&lt;/h2&gt;
+&lt;p&gt;内容 :spoiler[这里是隐藏的内容，点击可以显示]！&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;内容 :spoiler[隐藏的文字]！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;数学公式&lt;/h2&gt;
+&lt;p&gt;行内公式：$E = mc^2$&lt;/p&gt;
+&lt;p&gt;块级公式：&lt;/p&gt;
+&lt;p&gt;$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$&lt;/p&gt;
+</content:encoded></item><item><title>Mermaid 流程图示例</title><link>https://mizuki.mysqil.com/posts/markdown-mermaid/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-mermaid/</guid><description>演示如何在文章中使用 Mermaid 绘制各种图表</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Mermaid 是一个很方便的工具，可以直接用文字来画图表，不需要手动画图～&lt;/p&gt;
+&lt;h2&gt;流程图&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;graph TD
+    A[开始] --&amp;gt; B{条件判断}
+    B --&amp;gt;|是| C[执行步骤1]
+    B --&amp;gt;|否| D[执行步骤2]
+    C --&amp;gt; E[结束]
+    D --&amp;gt; E
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;时序图&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sequenceDiagram
+    participant 用户
+    participant 服务器
+    用户-&amp;gt;&amp;gt;服务器: 发送请求
+    服务器--&amp;gt;&amp;gt;用户: 返回结果
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;饼图&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;pie title 我的时间分配
+    &quot;睡觉&quot; : 35
+    &quot;摸鱼&quot; : 25
+    &quot;学习&quot; : 20
+    &quot;看番&quot; : 15
+    &quot;其他&quot; : 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Mermaid 支持很多种图表类型，具体可以参考&lt;a href=&quot;https://mermaid.js.org/&quot;&gt;官方文档&lt;/a&gt;。&lt;/p&gt;
+</content:encoded></item><item><title>写文章的一些小技巧</title><link>https://mizuki.mysqil.com/posts/markdown-tutorial/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-tutorial/</guid><description>记录一下博客写作常用的 Markdown 语法</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;基础语法&lt;/h2&gt;
+&lt;h3&gt;标题&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# 一级标题
+## 二级标题
+### 三级标题
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;强调&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;加粗文字&lt;/strong&gt; 和 &lt;em&gt;斜体文字&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;**加粗** 和 *斜体*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;列表&lt;/h3&gt;
+&lt;p&gt;无序列表：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;li&gt;第三项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有序列表：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一步&lt;/li&gt;
+&lt;li&gt;第二步&lt;/li&gt;
+&lt;li&gt;第三步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;链接和图片&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;[链接文字](https://example.com)
+![图片描述](./cover.jpg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;引用&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是一段引用的文字。
+可以用来引用别人说过的话，或者写个题词。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;p&gt;行内代码：&lt;code&gt;console.log(&quot;Hello&quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;代码块：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function hello() {
+  console.log(&quot;你好，世界！&quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2&gt;文章 Frontmatter&lt;/h2&gt;
+&lt;p&gt;每篇文章开头都要写一段配置信息：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: 文章标题
+published: 2026-01-01
+description: 文章简介，会显示在列表页
+image: ./cover.jpg  # 封面图，可以不填
+tags: [标签1, 标签2]
+category: 分类名称
+draft: false  # true 表示草稿，不会公开
+pinned: false  # true 表示置顶
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;就这些啦，其实写多了就熟了呢～&lt;/p&gt;
+</content:encoded></item><item><title>在文章中嵌入视频</title><link>https://mizuki.mysqil.com/posts/video/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/video/</guid><description>这篇文章演示如何在博客里嵌入 B 站或 YouTube 视频</description><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;直接把视频的嵌入代码复制到 Markdown 文件里就好啦～&lt;/p&gt;
+&lt;h2&gt;B 站视频&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; 
+  src=&quot;//player.bilibili.com/player.html?bvid=你的BV号&amp;amp;p=1&amp;amp;autoplay=0&quot; 
+  scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;amp;p=1&amp;amp;autoplay=0&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+&lt;h2&gt;YouTube 视频&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; 
+  src=&quot;https://www.youtube.com/embed/视频ID&quot; 
+  frameborder=&quot;0&quot; allowfullscreen&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>Simple Guides for Mizuki</title><link>https://mizuki.mysqil.com/posts/guide/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/guide/</guid><description>How to use this blog template.</description><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog template is built with &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;. For the things that are not mentioned in this guide, you may find the answers in the &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Front-matter of Posts&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: My First Blog Post
+published: 2023-09-09
+description: This is the first post of my new Astro blog.
+image: ./cover.jpg
+tags: [Foo, Bar]
+category: Front-end
+draft: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The title of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;published&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The date the post was published.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;pinned&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Whether this post is pinned to the top of the post list.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;priority&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A short description of the post. Displayed on index page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The cover image path of the post.&amp;lt;br/&amp;gt;1. Start with &lt;code&gt;http://&lt;/code&gt; or &lt;code&gt;https://&lt;/code&gt;: Use web image&amp;lt;br/&amp;gt;2. Start with &lt;code&gt;/&lt;/code&gt;: For image in &lt;code&gt;public&lt;/code&gt; dir&amp;lt;br/&amp;gt;3. With none of the prefixes: Relative to the markdown file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The tags of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;category&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The category of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;licenseName&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The license name for the post content.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;author&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The author of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sourceLink&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The source link or reference for the post content.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;If this post is still a draft, which won&apos;t be displayed.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Where to Place the Post Files&lt;/h2&gt;
+&lt;p&gt;Your post files should be placed in &lt;code&gt;src/content/posts/&lt;/code&gt; directory. You can also create sub-directories to better organize your posts and assets.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src/content/posts/
+├── post-1.md
+└── post-2/
+    ├── cover.webp
+    └── index.md
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item></channel></rss>

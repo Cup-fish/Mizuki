@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Cup-fish</title>
+  <subtitle>One demo website</subtitle>
+  <link href="https://mizuki.mysqil.com/" rel="alternate" type="text/html"/>
+  <link href="https://mizuki.mysqil.com/atom.xml" rel="self" type="application/atom+xml"/>
+  <id>https://mizuki.mysqil.com/</id>
+  <updated>2026-06-28T11:01:46.541Z</updated>
+  <language>zh_CN</language>
+  <entry>
+    <title>Markdown 扩展语法示例</title>
+    <link href="https://mizuki.mysqil.com/posts/markdown-extended/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/markdown-extended/</id>
+    <published>2026-01-01T00:00:00.000Z</published>
+    <updated>2026-01-01T00:00:00.000Z</updated>
+    <summary>演示博客支持的各种扩展 Markdown 语法</summary>
+    <content type="html"><![CDATA[<h2>GitHub 仓库卡片</h2>
+<p>可以用这个语法嵌入 GitHub 仓库卡片：</p>
+<p>::github{repo="Cup-fish/witherwithwinter.github.io"}</p>
+<pre><code>::github{repo="用户名/仓库名"}
+</code></pre>
+<h2>提示框</h2>
+<p>支持以下几种提示框类型：</p>
+<p>:::note
+这是一条普通提示，用来补充说明一些信息。
+:::</p>
+<p>:::tip
+这是一条小技巧，帮助你更顺利地完成操作。
+:::</p>
+<p>:::warning
+这是一条警告，请注意这里可能有风险。
+:::</p>
+<p>:::important
+这是重要信息，不要错过哦。
+:::</p>
+<p>:::caution
+这是一条危险提示，操作前请三思。
+:::</p>
+<h2>折叠剧透</h2>
+<p>内容 :spoiler[这里是隐藏的内容，点击可以显示]！</p>
+<pre><code>内容 :spoiler[隐藏的文字]！
+</code></pre>
+<h2>数学公式</h2>
+<p>行内公式：$E = mc^2$</p>
+<p>块级公式：</p>
+<p>$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$</p>
+]]></content>
+    <author>
+      <name>Cup-fish</name>
+    </author>
+    <category term="示例"></category>
+  </entry>
+  <entry>
+    <title>Mermaid 流程图示例</title>
+    <link href="https://mizuki.mysqil.com/posts/markdown-mermaid/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/markdown-mermaid/</id>
+    <published>2026-01-01T00:00:00.000Z</published>
+    <updated>2026-01-01T00:00:00.000Z</updated>
+    <summary>演示如何在文章中使用 Mermaid 绘制各种图表</summary>
+    <content type="html"><![CDATA[<p>Mermaid 是一个很方便的工具，可以直接用文字来画图表，不需要手动画图～</p>
+<h2>流程图</h2>
+<pre><code>graph TD
+    A[开始] --&gt; B{条件判断}
+    B --&gt;|是| C[执行步骤1]
+    B --&gt;|否| D[执行步骤2]
+    C --&gt; E[结束]
+    D --&gt; E
+</code></pre>
+<h2>时序图</h2>
+<pre><code>sequenceDiagram
+    participant 用户
+    participant 服务器
+    用户-&gt;&gt;服务器: 发送请求
+    服务器--&gt;&gt;用户: 返回结果
+</code></pre>
+<h2>饼图</h2>
+<pre><code>pie title 我的时间分配
+    "睡觉" : 35
+    "摸鱼" : 25
+    "学习" : 20
+    "看番" : 15
+    "其他" : 5
+</code></pre>
+<p>Mermaid 支持很多种图表类型，具体可以参考<a href="https://mermaid.js.org/">官方文档</a>。</p>
+]]></content>
+    <author>
+      <name>Cup-fish</name>
+    </author>
+    <category term="示例"></category>
+  </entry>
+  <entry>
+    <title>写文章的一些小技巧</title>
+    <link href="https://mizuki.mysqil.com/posts/markdown-tutorial/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/markdown-tutorial/</id>
+    <published>2026-01-01T00:00:00.000Z</published>
+    <updated>2026-01-01T00:00:00.000Z</updated>
+    <summary>记录一下博客写作常用的 Markdown 语法</summary>
+    <content type="html"><![CDATA[<h2>基础语法</h2>
+<h3>标题</h3>
+<pre><code># 一级标题
+## 二级标题
+### 三级标题
+</code></pre>
+<h3>强调</h3>
+<p><strong>加粗文字</strong> 和 <em>斜体文字</em></p>
+<pre><code>**加粗** 和 *斜体*
+</code></pre>
+<h3>列表</h3>
+<p>无序列表：</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<p>有序列表：</p>
+<ol>
+<li>第一步</li>
+<li>第二步</li>
+<li>第三步</li>
+</ol>
+<h3>链接和图片</h3>
+<pre><code>[链接文字](https://example.com)
+![图片描述](./cover.jpg)
+</code></pre>
+<h3>引用</h3>
+<blockquote>
+<p>这是一段引用的文字。
+可以用来引用别人说过的话，或者写个题词。</p>
+</blockquote>
+<h3>代码</h3>
+<p>行内代码：<code>console.log("Hello")</code></p>
+<p>代码块：</p>
+<pre><code>function hello() {
+  console.log("你好，世界！")
+}
+</code></pre>
+<hr />
+<h2>文章 Frontmatter</h2>
+<p>每篇文章开头都要写一段配置信息：</p>
+<pre><code>---
+title: 文章标题
+published: 2026-01-01
+description: 文章简介，会显示在列表页
+image: ./cover.jpg  # 封面图，可以不填
+tags: [标签1, 标签2]
+category: 分类名称
+draft: false  # true 表示草稿，不会公开
+pinned: false  # true 表示置顶
+---
+</code></pre>
+<p>就这些啦，其实写多了就熟了呢～</p>
+]]></content>
+    <author>
+      <name>Cup-fish</name>
+    </author>
+    <category term="示例"></category>
+  </entry>
+  <entry>
+    <title>在文章中嵌入视频</title>
+    <link href="https://mizuki.mysqil.com/posts/video/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/video/</id>
+    <published>2026-01-01T00:00:00.000Z</published>
+    <updated>2026-01-01T00:00:00.000Z</updated>
+    <summary>这篇文章演示如何在博客里嵌入 B 站或 YouTube 视频</summary>
+    <content type="html"><![CDATA[<p>直接把视频的嵌入代码复制到 Markdown 文件里就好啦～</p>
+<h2>B 站视频</h2>
+<pre><code>&lt;iframe width="100%" height="468" 
+  src="//player.bilibili.com/player.html?bvid=你的BV号&amp;p=1&amp;autoplay=0" 
+  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"&gt;
+&lt;/iframe&gt;
+</code></pre>
+<p>&lt;iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;p=1&amp;autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"&gt;&lt;/iframe&gt;</p>
+<h2>YouTube 视频</h2>
+<pre><code>&lt;iframe width="100%" height="468" 
+  src="https://www.youtube.com/embed/视频ID" 
+  frameborder="0" allowfullscreen&gt;
+&lt;/iframe&gt;
+</code></pre>
+]]></content>
+    <author>
+      <name>Cup-fish</name>
+    </author>
+    <category term="示例"></category>
+  </entry>
+  <entry>
+    <title>Simple Guides for Mizuki</title>
+    <link href="https://mizuki.mysqil.com/posts/guide/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/guide/</id>
+    <published>2024-04-01T00:00:00.000Z</published>
+    <updated>2024-04-01T00:00:00.000Z</updated>
+    <summary>How to use this blog template.</summary>
+    <content type="html"><![CDATA[<p>This blog template is built with <a href="https://astro.build/">Astro</a>. For the things that are not mentioned in this guide, you may find the answers in the <a href="https://docs.astro.build/">Astro Docs</a>.</p>
+<h2>Front-matter of Posts</h2>
+<pre><code>---
+title: My First Blog Post
+published: 2023-09-09
+description: This is the first post of my new Astro blog.
+image: ./cover.jpg
+tags: [Foo, Bar]
+category: Front-end
+draft: false
+---
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>The title of the post.</td>
+</tr>
+<tr>
+<td><code>published</code></td>
+<td>The date the post was published.</td>
+</tr>
+<tr>
+<td><code>pinned</code></td>
+<td>Whether this post is pinned to the top of the post list.</td>
+</tr>
+<tr>
+<td><code>priority</code></td>
+<td>The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>A short description of the post. Displayed on index page.</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>The cover image path of the post.&lt;br/&gt;1. Start with <code>http://</code> or <code>https://</code>: Use web image&lt;br/&gt;2. Start with <code>/</code>: For image in <code>public</code> dir&lt;br/&gt;3. With none of the prefixes: Relative to the markdown file</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>The tags of the post.</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>The category of the post.</td>
+</tr>
+<tr>
+<td><code>licenseName</code></td>
+<td>The license name for the post content.</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>The author of the post.</td>
+</tr>
+<tr>
+<td><code>sourceLink</code></td>
+<td>The source link or reference for the post content.</td>
+</tr>
+<tr>
+<td><code>draft</code></td>
+<td>If this post is still a draft, which won't be displayed.</td>
+</tr>
+</tbody>
+</table>
+<h2>Where to Place the Post Files</h2>
+<p>Your post files should be placed in <code>src/content/posts/</code> directory. You can also create sub-directories to better organize your posts and assets.</p>
+<pre><code>src/content/posts/
+├── post-1.md
+└── post-2/
+    ├── cover.webp
+    └── index.md
+</code></pre>
+]]></content>
+    <author>
+      <name>Cup-fish</name>
+    </author>
+    <category term="Guides"></category>
+  </entry>
+</feed>
