@@ -1,59 +1,52 @@
 ---
-title: Simple Guides for Mizuki
-published: 2024-04-01
-description: "How to use this blog template."
-image: "./cover.webp"
-tags: ["Mizuki", "Blogging", "Customization"]
-category: Guides
+title: 博客使用小指南
+published: 2026-01-01
+description: 简单记录一下这个博客的基本玩法。
+image: ''
+tags: [指南, 博客]
+category: 日常
 draft: false
 ---
 
+## 写文章
 
+新建一个 `.md` 文件放到 `src/content/posts/` 目录下就好了呢。
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
-
-## Front-matter of Posts
+文件开头记得写好 Frontmatter：
 
 ```yaml
 ---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
+title: 文章标题
+published: 2026-03-19
+description: 简单说说这篇文章讲什么
+tags: [标签1, 标签2]
+category: 分类
 draft: false
 ---
 ```
 
+## 图片
 
+文章封面图片可以放在文章同目录下，然后在 Frontmatter 里这样写：
 
-
-| Attribute     | Description                                                                                                                                                                                                 |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `pinned`      | Whether this post is pinned to the top of the post list.                                                                                                                                                   |
-| `priority`    | The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).                                                                                                                          |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `licenseName` | The license name for the post content.                                                                                                                                                                      |
-| `author`      | The author of the post.                                                                                                                                                                                     |
-| `sourceLink`  | The source link or reference for the post content.                                                                                                                                                          |
-| `draft`       | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
-
-## Where to Place the Post Files
-
-
-
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
-
+```yaml
+image: ./cover.jpg
 ```
-src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.webp
-    └── index.md
+
+也可以用网络图片地址。
+
+## 草稿
+
+写到一半不想发布，把 `draft` 设成 `true` 就行啦，这样只有本地开发模式能看到，部署之后不会公开呢。
+
+## 置顶
+
+想把某篇文章放到最上面，加上这个就好：
+
+```yaml
+pinned: true
 ```
+
+---
+
+慢慢来，想写什么就写什么，不用有压力的 🐟

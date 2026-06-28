@@ -1,0 +1,10 @@
+{
+	"title": "我的日常",
+	"hidden": false,
+	"description": "随手拍下来的一些小瞬间。",
+	"date": "2026-01-10",
+	"location": "随处",
+	"tags": ["日常", "随拍"],
+	"layout": "masonry",
+	"columns": 3
+}

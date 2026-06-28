@@ -24,7 +24,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "Cup-fish",
 	subtitle: "One demo website",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://cup-fish.github.io/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -57,7 +57,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "assets/home/home.png",
 		// 网站Logo图片路径
-		logo: "assets/home/default-logo.png",
+		logo: "assets/home/Gemini_Generated_Image_n1n0vfn1n0vfn1n0.png",
 	},
 
 	// 页面自动缩放配置
@@ -162,19 +162,13 @@ export const siteConfig: SiteConfig = {
 			enable: true, // 在主页显示自定义文本
 			title: "Cup-fish", // ← 已更新为你的主标题
 
-			subtitle: [
-				"没什么特别的，但你在就够了",
-				"到现在你依然是我的光",
-				"不知不觉，你已经变成我每天的日常了",
-				"和你聊聊天，感觉每天都能好过一点点",
-				"今天没什么大事，但还是有点开心",
-			],
+			subtitle: ["我正在努力学习编程", "你好我真的不知道说什么了"],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
 
 				speed: 100, // 打字速度（毫秒）
 				deleteSpeed: 50, // 删除速度（毫秒）
-				pauseTime: 2000, // 完全显示后的暂停时间（毫秒）
+				pauseTime: 4000, // 完全显示后的暂停时间（毫秒）
 			},
 		},
 
@@ -279,12 +273,6 @@ export const navBarConfig: NavBarConfig = {
 					external: true,
 					icon: "fa7-brands:bilibili",
 				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
-				},
 			],
 		},
 		{
@@ -306,12 +294,6 @@ export const navBarConfig: NavBarConfig = {
 					name: "Gallery",
 					url: "/albums/",
 					icon: "material-symbols:photo-library",
-				},
-				{
-					name: "Devices",
-					url: "devices/",
-					icon: "material-symbols:devices",
-					external: false,
 				},
 			],
 		},
@@ -360,7 +342,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Cup-fish", // ← 已更新为你的名字
-	bio: "世界很大，你总要去看看",
+	bio: "YURI全肯定",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
@@ -421,7 +403,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
 		lang: SITE_LANG,
@@ -574,7 +556,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
@@ -602,7 +584,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: true, // 启用看板娘
+	enable: false, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 模型位置
 	width: 280, // 默认宽度
@@ -611,12 +593,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
 		welcome: "欢迎来到Cup-fish的小窝！", // ← 已更新为中文欢迎词
-		touch: [
-			"你在干嘛呢？",
-			"别戳我啦～",
-			"坏家伙！",
-			"不许欺负我！",
-		], // ← 已更新为中文触摸提示
+		touch: ["你在干嘛呢？", "别戳我啦～", "坏家伙！", "不许欺负我！"], // ← 已更新为中文触摸提示
 		home: "点这里回到首页哦！", // ← 已更新为中文
 		skin: ["想看看我的新衣服吗？", "新衣服好看吗～"], // ← 已更新为中文
 		close: "QWQ 下次再见～", // 关闭提示
@@ -637,3 +614,4 @@ export const widgetConfigs = {
 } as const;
 
 // umamiConfig相关配置已移动至astro.config.mjs中,统计脚本请自行在Layout.astro文件的<head>中插入
+
