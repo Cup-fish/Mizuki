@@ -23,7 +23,7 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
 	title: "Cup-fish",
-	subtitle: "One demo website",
+	subtitle: "IT运维 & 数据运营",
 	siteURL: "https://cup-fish.github.io/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
@@ -146,9 +146,9 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Cup-fish", // ← 已更新为你的主标题
+			title: "Cup-fish", // 主标题
 
-			subtitle: ["我正在努力学习编程", "你好我真的不知道说什么了"],
+			subtitle: ["数据科学与大数据技术", "全栈开发 · 数据可视化 · AI 实践"],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
 
@@ -328,24 +328,28 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Cup-fish", // ← 已更新为你的名字
-	bio: "YURI全肯定",
+	bio: "数据科学与大数据技术 | 全栈开发 & 数据可视化 | AI 效率实践",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
 	},
-	links: [
-		{
-			name: "Bilibili",
-			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/391416966", // ← 已更新为你的 Bilibili
-		},
-		{
-			name: "GitHub",
-			icon: "fa7-brands:github",
-			url: "https://github.com/Cup-fish", // ← 已更新为你的 GitHub
-		},
-		// 如需添加其他社交链接，在此处继续添加
-	],
+		links: [
+			{
+				name: "GitHub",
+				icon: "fa7-brands:github",
+				url: "https://github.com/Cup-fish",
+			},
+			{
+				name: "Bilibili",
+				icon: "fa7-brands:bilibili",
+				url: "https://space.bilibili.com/391416966",
+			},
+			{
+				name: "Email",
+				icon: "material-symbols:mail",
+				url: "mailto:amongdeal8383@gmail.com",
+			},
+		],
 };
 
 export const licenseConfig: LicenseConfig = {
@@ -402,7 +406,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "欢迎来到我的博客！这里是Cup-fish的小天地～", // ← 已更新为中文公告
+	content: "欢迎来到我的个人主页！这里记录了我的技术学习、项目实践与日常思考～", // ← 已更新为中文公告
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接

@@ -1,6 +1,4 @@
-// Project data configuration file
-// Used to manage data for the project display page
-
+// 项目数据配置
 export interface Project {
 	id: string;
 	title: string;
@@ -15,126 +13,90 @@ export interface Project {
 	endDate?: string;
 	featured?: boolean;
 	tags?: string[];
-	visitUrl?: string; // 添加前往项目链接字段
+	visitUrl?: string;
 }
 
 export const projectsData: Project[] = [
 	{
-		id: "mizuki-blog",
-		title: "Mizuki Blog Theme",
+		id: "property-park-system",
+		title: "物业园区管理系统",
 		description:
-			"Modern blog theme developed based on the Astro framework, supporting multilingual, dark mode, and responsive design features.",
+			"全栈实现的物业园区综合运营管理平台。覆盖合同全生命周期管理、账单自动计算、流水智能对账、RBAC 权限管控等核心模块，编写 50+ E2E 自动化测试用例保障系统稳定性。利用 AI 实现流水智能对账，将人工对账工作量降低约 80%。",
+		image: "",
+		category: "web",
+		techStack: ["Vue 3", "TypeScript", "NestJS", "MySQL", "ECharts", "Playwright"],
+		status: "completed",
+		startDate: "2025-06-01",
+		featured: true,
+		tags: ["全栈", "RBAC", "AI对账", "自动化测试"],
+	},
+	{
+		id: "mall4j-ecommerce",
+		title: "Mall4j 开源电商系统",
+		description:
+			"参与开源电商系统开发，基于 Spring Boot 3 + MyBatis Plus + Redis 技术栈。负责商品与订单模块，实践高并发下的数据库设计与缓存应用，具备跨模块协同与接口对接经验。",
+		image: "",
+		category: "web",
+		techStack: ["Spring Boot 3", "MyBatis Plus", "Redis", "Vue 3", "MySQL"],
+		status: "in-progress",
+		sourceCode: "https://github.com/Cup-fish",
+		startDate: "2024-06-01",
+		featured: true,
+		tags: ["电商", "开源", "Java", "微服务"],
+	},
+	{
+		id: "chain-store-dashboard",
+		title: "连锁门店大数据看板",
+		description:
+			"为连锁门店打造的多维经营数据可视化看板，综合展示客源画像、会员分析、活动运营、业态分布等维度。适配 1920×1080 大屏展示，设计 Loading / Empty / Error 多状态容错机制，支持多设备分辨率自适应。",
+		image: "",
+		category: "web",
+		techStack: ["Vue 3", "ECharts 6", "TypeScript", "Vite", "CSS"],
+		status: "completed",
+		startDate: "2025-09-01",
+		endDate: "2025-11-01",
+		featured: true,
+		tags: ["数据可视化", "大屏", "Vue3", "ECharts"],
+	},
+	{
+		id: "mizuki-blog",
+		title: "Mizuki 个人主页",
+		description:
+			"基于 Astro 6 框架构建的现代化个人主页，支持多语言、暗色模式、响应式设计。部署于 GitHub Pages，通过 CI/CD 自动构建发布。",
 		image: "",
 		category: "web",
 		techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
 		status: "completed",
-		liveDemo: "https://blog.example.com",
-		sourceCode: "https://github.com/example/mizuki", // 更改为GitHub链接
-		visitUrl: "https://blog.example.com", // 添加前往项目链接
-		startDate: "2024-01-01",
-		endDate: "2024-06-01",
-		featured: true,
-		tags: ["Blog", "Theme", "Open Source"],
-	},
-	{
-		id: "portfolio-website",
-		title: "Personal Portfolio",
-		description:
-			"Personal portfolio website showcasing project experience and technical skills.",
-		image: "",
-		category: "web",
-		techStack: ["React", "Next.js", "TypeScript", "Framer Motion"],
-		status: "completed",
-		liveDemo: "https://portfolio.example.com",
-		sourceCode: "https://github.com/example/portfolio",
-		visitUrl: "https://portfolio.example.com", // 添加前往项目链接
-		startDate: "2023-09-01",
-		endDate: "2023-12-01",
-		featured: true,
-		tags: ["Portfolio", "React", "Animation"],
-	},
-	{
-		id: "task-manager-app",
-		title: "Task Manager App",
-		description:
-			"Cross-platform task management application supporting team collaboration and project management.",
-		image: "",
-		category: "mobile",
-		techStack: ["React Native", "TypeScript", "Redux", "Firebase"],
-		status: "in-progress",
-		startDate: "2024-03-01",
-		tags: ["Mobile", "Productivity", "Team Collaboration"],
-	},
-	{
-		id: "data-visualization-tool",
-		title: "Data Visualization Tool",
-		description:
-			"Data visualization tool supporting multiple chart types and interactive analysis.",
-		image: "",
-		category: "web",
-		techStack: ["Vue.js", "D3.js", "TypeScript", "Node.js"],
-		status: "completed",
-		liveDemo: "https://dataviz.example.com",
-		visitUrl: "https://dataviz.example.com", // 添加前往项目链接
-		startDate: "2023-06-01",
-		endDate: "2023-11-01",
-		tags: ["Data Visualization", "Analytics", "Charts"],
-	},
-	{
-		id: "e-commerce-platform",
-		title: "E-commerce Platform",
-		description:
-			"Full-stack e-commerce platform including user management, product management, and order processing features.",
-		image: "",
-		category: "web",
-		techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-		status: "planned",
-		startDate: "2024-07-01",
-		tags: ["E-commerce", "Full Stack", "Payment Integration"],
+		liveDemo: "https://cup-fish.github.io/",
+		sourceCode: "https://github.com/Cup-fish/cup-fish.github.io",
+		visitUrl: "https://cup-fish.github.io/",
+		startDate: "2026-06-01",
+		featured: false,
+		tags: ["博客", "个人主页", "GitHub Pages"],
 	},
 ];
 
-// Get project statistics
 export const getProjectStats = () => {
 	const total = projectsData.length;
-	const completed = projectsData.filter(
-		(p) => p.status === "completed",
-	).length;
-	const inProgress = projectsData.filter(
-		(p) => p.status === "in-progress",
-	).length;
+	const completed = projectsData.filter((p) => p.status === "completed").length;
+	const inProgress = projectsData.filter((p) => p.status === "in-progress").length;
 	const planned = projectsData.filter((p) => p.status === "planned").length;
-
-	return {
-		total,
-		byStatus: {
-			completed,
-			inProgress,
-			planned,
-		},
-	};
+	return { total, byStatus: { completed, inProgress, planned } };
 };
 
-// Get projects by category
 export const getProjectsByCategory = (category?: string) => {
-	if (!category || category === "all") {
-		return projectsData;
-	}
+	if (!category || category === "all") return projectsData;
 	return projectsData.filter((p) => p.category === category);
 };
 
-// Get featured projects
 export const getFeaturedProjects = () => {
 	return projectsData.filter((p) => p.featured);
 };
 
-// Get all tech stacks
 export const getAllTechStack = () => {
 	const techSet = new Set<string>();
 	projectsData.forEach((project) => {
-		project.techStack.forEach((tech) => {
-			techSet.add(tech);
-		});
+		project.techStack.forEach((tech) => techSet.add(tech));
 	});
 	return Array.from(techSet).sort();
 };
